@@ -5,7 +5,7 @@ export default function Dashboard() {
     <>
       <MainHeader title="Dashboard" />
       <section>
-        <p>
+        <p className="max-w-[90ch]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cum vero
           explicabo itaque dolore? Corrupti ea id voluptate magni minus itaque
           optio, perferendis iusto accusantium vel necessitatibus reiciendis

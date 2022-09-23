@@ -18,7 +18,11 @@ export default function Sidebar(props: SidebarProps) {
       <SidebarHeader userName="Enrique Dick" />
       <SidebarNav />
       <section className="mx-auto">
-        <SidebarLink title="Sign-out" icon={<RiLogoutBoxRFill />} />
+        <SidebarLink
+          link="/signout"
+          title="Sign-out"
+          icon={<RiLogoutBoxRFill />}
+        />
       </section>
     </aside>
   );

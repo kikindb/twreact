@@ -5,7 +5,7 @@ export default function Profile() {
     <>
       <MainHeader title="My Profile" />
       <section>
-        <p>
+        <p className="max-w-[90ch]">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
           dignissimos corrupti dolorum? Animi fugiat, quis aliquam vitae sed
           corporis repellendus.

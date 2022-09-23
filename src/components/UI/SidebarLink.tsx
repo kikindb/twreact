@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ReactElement } from "react";
 import { IconType } from "react-icons/lib";
 
@@ -11,11 +11,16 @@ interface SidebarLinkProps {
 export default function SidebarLink(props: SidebarLinkProps) {
   const { title, link = "/", icon } = props;
   return (
-    <Link
+    <NavLink
       to={link}
-      className="capitalize text-gray-500 hover:text-gray-800 font-semibold flex items-center justify-left gap-4 transition-colors"
+      className={({ isActive }) =>
+        `${
+          isActive ? "text-gray-800" : "text-gray-500"
+        } capitalize hover:text-gray-800 font-semibold flex items-center justify-left gap-4 transition-colors`
+      }
+      end
     >
       {icon} {title}
-    </Link>
+    </NavLink>
   );
 }

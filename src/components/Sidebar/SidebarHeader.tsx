@@ -9,7 +9,7 @@ export default function SidebarHeader({
   appTitle = "TW React",
   greeting = "Welcome Back!",
   userName = "Username",
-  image = "img/default-user.jfif",
+  image = "https://avatars.githubusercontent.com/u/5817946?v=4",
 }: SidebarHeaderProps) {
   return (
     <header>
