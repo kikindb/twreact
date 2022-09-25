@@ -13,7 +13,7 @@ export default function Sidebar(props: SidebarProps) {
     <aside
       className={`absolute ${
         toggle ? "left-0" : "-left-full"
-      } top-0 z-10 h-screen lg:static w-full flex flex-col justify-between bg-white shadow-md lg:rounded-xl p-4 transition-all col-span-2`}
+      } top-0 z-10 h-full lg:static w-full flex flex-col justify-between bg-white shadow-md lg:rounded-xl p-4 transition-all col-span-2`}
     >
       <SidebarHeader userName="Enrique Dick" />
       <SidebarNav />
